@@ -1,0 +1,4 @@
+theme = "chris-biscardi"
+
+[editor]
+line-number = "relative"

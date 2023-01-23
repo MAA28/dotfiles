@@ -1,0 +1,1138 @@
+ls
+cd ..
+ls
+cd .config/
+ls
+rm alacritty.yml
+sudo pacman -S helix
+ls
+mkdir alacritty
+cd alacritty/
+ls
+helix alacritty.yml
+mv alacritty.yml alacritty.yml.bak
+touch alacritty.yml
+helix alacritty.yml
+sudo pacman -S where
+who
+mv alacritty.yml alacritty.yml.bak1
+mv alacritty.yml.bak1 alacritty.yml
+helix alacritty.yml
+ls
+rm alacritty.yml
+ls
+mv alacritty.yml.bak alacritty.yml
+helix alacritty.yml
+ks
+ls
+cd ..
+helix alacritty.yml
+ls
+cd alacritty/
+helix alacritty.yml
+cd ..
+cd nushell/
+ls
+cd ..
+cd alacritty/
+ls
+cd .config/
+cd alacritty/
+helix alacritty.yml
+i3-msg reload
+helix alacritty.yml
+cd ..
+ls
+cd i3
+cd ..
+ls
+ls -a
+i3-msg reload
+i3-msg -v
+i3-msg reload
+config nu
+cd s/o/f
+ls
+ls -a
+ls -a | grep .
+mv .i3 .config/i3
+cd .config
+ls
+cd i3
+ls
+i3-msg reload
+sudo pacman -S feh
+cd Pictures/
+mkdir Wallpapers
+cd Wallpapers
+ls
+feh --bg-fill 4848.webp
+ls
+feh --bg-fill vladimir-lenin-communism-hd-wallpaper-thumb.jpg
+feh --bg-fill vladimir-lenin-communism-hd-wallpaper-thumb1.jpg
+feh --bg-fill 1478935920.png
+feh --bg-fill 343985-sepik.jpg
+i3-msg reload
+ls
+helix .
+ls
+cd ,,+
+cd ,,
+cd ..
+ls
+sudo pacman -S rofi
+rofi
+rofi --run
+rofi run
+rofi --show run
+rofi -show run
+cd i3
+ls
+sudo pacman -S bat
+sudo pacman -S ripgrep
+i3-msg reload
+N
+i3-msg reload
+helix .
+i3-msg reload
+i3-msg restart
+helix .
+i3-msg restart
+ls
+rofi -show drun
+cd .config/i3/
+helix .
+i3-msg reload
+cd ..
+cd nushell/
+ls
+ediut
+edit
+config nu
+config i3
+sudo pacman -S stean
+sudo pacman -S steam
+yay jetbrains-toolbox
+helix config.nu
+sudo pacman -S picom
+yay -S picom-jonaburg
+yay -S picom-jonaburg-git
+sudo pacman -S btop
+btiop
+btop
+picom
+sudo pacman -S signal-desktop
+sudo pamac install gdlauncher
+cd .config/i3/
+ls
+i3-msg reload
+feh --bg-fill 343985-sepik.jpg
+helix config
+i3-msg reload
+cd Pictures/
+cd ~/Pictures/Wallpapers/
+ls
+feh --bg-fill 343985-sepik.jpg
+$HOME
+echo $HOME
+cd .config/i3/
+i3-msg reload
+cd ~/.config/nushell/
+ls
+helix config
+ls
+helix config.nu
+ls
+sudo pacman -S zoxide
+zoxide
+zoxide init
+zoxide init nu
+zoxide init nushell
+cd ~/.config/nushell/
+ls
+helix zoxide.nu
+helix config.nu
+cd ~/.config/nushell/
+ls
+helix config.nu
+cd ~/.config/nushell/
+z
+z home
+z Desktop/
+zi
+z ..
+ls
+z De
+zi
+zoxide 
+zoxide query
+z 
+z Pictures/Wallpapers/
+z ~
+z wal
+z wall
+sudo pacman -S fzf
+zi
+z wall
+_zoxide
+_zoxide_z
+__zoxide_z
+__zoxide_zi 
+z Pictures/Wallpapers/
+z ~
+ls
+zi 
+zi
+z wall
+r
+ranger
+cd `Downloads/My Games/`
+ls
+cd ..
+ls
+cd `Sozialistische Deutsche Arbeiterjugend (SDAJ-GOE)/`
+ls
+dolphin .
+ls
+i3-msg reload
+sudo pacman -S compton
+yay -S compton
+picom
+helix TODO.md
+ls
+i3-msg reload
+helix TODO.md
+bat TODO.md
+cd .config/
+ls
+mkdir picom
+cd picom/
+helix picom.conf
+picom
+picom --experimental-backends --diagnostics
+sudo pamac remove picom
+sudo pamac reinstall picom
+sudo pamac --help
+i3-msg reload
+cd ..
+cd picom/
+ls
+helix picom.conf
+locate picom.conf
+ls
+updatedb
+sudo updatedb
+locate picom.conf
+bat /etc/xdg/picom.conf.example
+xclip
+cat /etc/xdg/picom.conf.example | xclip
+cat /etc/xdg/picom.conf.example | xclip -selection clipboard
+#################################
+#          Animations           #
+#################################
+# requires https://github.com/jonaburg/picom
+# (These are also the default values)
+transition-length = 300
+transition-pow-x = 0.1
+transition-pow-y = 0.1
+transition-pow-w = 0.1
+transition-pow-h = 0.1
+size-transition = true
+#################################
+#             Corners           #
+#################################
+# requires: https://github.com/sdhand/compton or https://github.com/jonaburg/picom
+corner-radius = 10.0;
+rounded-corners-exclude = [<\n>  #"window_type = 'normal'",<\n>  "class_g = 'awesome'",<\n>  "class_g = 'URxvt'",<\n>  "class_g = 'XTerm'",<\n>  "class_g = 'kitty'",<\n>  "class_g = 'Alacritty'",<\n>  "class_g = 'Polybar'",<\n>  "class_g = 'code-oss'",<\n>  #"class_g = 'TelegramDesktop'",<\n>  "class_g = 'firefox'",<\n>  "class_g = 'Thunderbird'"<\n>];
+round-borders = 1;
+round-borders-exclude = [<\n>  #"class_g = 'TelegramDesktop'",<\n>];
+#################################
+#             Shadows           #
+#################################
+# Enabled client-side shadows on windows. Note desktop windows 
+# (windows with '_NET_WM_WINDOW_TYPE_DESKTOP') never get shadow, 
+# unless explicitly requested using the wintypes option.
+#
+# shadow = false
+shadow = false;
+# The blur radius for shadows, in pixels. (defaults to 12)
+# shadow-radius = 12
+shadow-radius = 7;
+# The opacity of shadows. (0.0 - 1.0, defaults to 0.75)
+# shadow-opacity = .75
+# The left offset for shadows, in pixels. (defaults to -15)
+# shadow-offset-x = -15
+shadow-offset-x = -7;
+# The top offset for shadows, in pixels. (defaults to -15)
+# shadow-offset-y = -15
+shadow-offset-y = -7;
+# Avoid drawing shadows on dock/panel windows. This option is deprecated,
+# you should use the *wintypes* option in your config file instead.
+#
+# no-dock-shadow = false
+# Don't draw shadows on drag-and-drop windows. This option is deprecated, 
+# you should use the *wintypes* option in your config file instead.
+#
+# no-dnd-shadow = false
+# Red color value of shadow (0.0 - 1.0, defaults to 0).
+# shadow-red = 0
+# Green color value of shadow (0.0 - 1.0, defaults to 0).
+# shadow-green = 0
+# Blue color value of shadow (0.0 - 1.0, defaults to 0).
+# shadow-blue = 0
+# Do not paint shadows on shaped windows. Note shaped windows 
+# here means windows setting its shape through X Shape extension. 
+# Those using ARGB background is beyond our control. 
+# Deprecated, use 
+#   shadow-exclude = 'bounding_shaped'
+# or 
+#   shadow-exclude = 'bounding_shaped && !rounded_corners'
+# instead.
+#
+# shadow-ignore-shaped = ''
+# Specify a list of conditions of windows that should have no shadow.
+#
+# examples:
+#   shadow-exclude = "n:e:Notification";
+#
+# shadow-exclude = []
+shadow-exclude = [<\n>  "name = 'Notification'",<\n>  "class_g = 'Conky'",<\n>  "class_g ?= 'Notify-osd'",<\n>  "class_g = 'Cairo-clock'",<\n>  "class_g = 'slop'",<\n>  "class_g = 'Polybar'",<\n>  "_GTK_FRAME_EXTENTS@:c"<\n>];
+# Specify a X geometry that describes the region in which shadow should not
+# be painted in, such as a dock window region. Use 
+#    shadow-exclude-reg = "x10+0+0"
+# for example, if the 10 pixels on the bottom of the screen should not have shadows painted on.
+#
+# shadow-exclude-reg = "" 
+# Crop shadow of a window fully on a particular Xinerama screen to the screen.
+# xinerama-shadow-crop = false
+#################################
+#           Fading              #
+#################################
+# Fade windows in/out when opening/closing and when opacity changes,
+#  unless no-fading-openclose is used.
+# fading = false
+fading = true;
+# Opacity change between steps while fading in. (0.01 - 1.0, defaults to 0.028)
+# fade-in-step = 0.028
+fade-in-step = 0.03;
+# Opacity change between steps while fading out. (0.01 - 1.0, defaults to 0.03)
+# fade-out-step = 0.03
+fade-out-step = 0.03;
+# The time between steps in fade step, in milliseconds. (> 0, defaults to 10)
+# fade-delta = 10
+# Specify a list of conditions of windows that should not be faded.
+# don't need this, we disable fading for all normal windows with wintypes: {}
+fade-exclude = [<\n>  "class_g = 'slop'"   # maim<\n>]
+# Do not fade on window open/close.
+# no-fading-openclose = false
+# Do not fade destroyed ARGB windows with WM frame. Workaround of bugs in Openbox, Fluxbox, etc.
+# no-fading-destroyed-argb = false
+#################################
+#   Transparency / Opacity      #
+#################################
+# Opacity of inactive windows. (0.1 - 1.0, defaults to 1.0)
+# inactive-opacity = 1
+inactive-opacity = 0.8;
+# Opacity of window titlebars and borders. (0.1 - 1.0, disabled by default)
+# frame-opacity = 1.0
+frame-opacity = 0.7;
+# Default opacity for dropdown menus and popup menus. (0.0 - 1.0, defaults to 1.0)
+# menu-opacity = 1.0 
+# menu-opacity is depreciated use dropdown-menu and popup-menu instead.
+#If using these 2 below change their values in line 510 & 511 aswell
+popup_menu = { opacity = 0.8; }
+dropdown_menu = { opacity = 0.8; }
+# Let inactive opacity set by -i override the '_NET_WM_OPACITY' values of windows.
+# inactive-opacity-override = true
+inactive-opacity-override = false;
+# Default opacity for active windows. (0.0 - 1.0, defaults to 1.0)
+active-opacity = 1.0;
+# Dim inactive windows. (0.0 - 1.0, defaults to 0.0)
+# inactive-dim = 0.0
+# Specify a list of conditions of windows that should always be considered focused.
+# focus-exclude = []
+focus-exclude = [<\n>  "class_g = 'Cairo-clock'",<\n>  "class_g = 'Bar'",                    # lemonbar<\n>  "class_g = 'slop'"                    # maim<\n>];
+# Use fixed inactive dim value, instead of adjusting according to window opacity.
+# inactive-dim-fixed = 1.0
+# Specify a list of opacity rules, in the format `PERCENT:PATTERN`, 
+# like `50:name *= "Firefox"`. picom-trans is recommended over this. 
+# Note we don't make any guarantee about possible conflicts with other 
+# programs that set '_NET_WM_WINDOW_OPACITY' on frame or client windows.
+# example:
+#    opacity-rule = [ "80:class_g = 'URxvt'" ];
+#
+# opacity-rule = []
+opacity-rule = [<\n>  "80:class_g     = 'Bar'",             # lemonbar<\n>  "100:class_g    = 'slop'",            # maim<\n>  "100:class_g    = 'XTerm'",<\n>  "100:class_g    = 'URxvt'",<\n>  "100:class_g    = 'kitty'",<\n>  "100:class_g    = 'Alacritty'",<\n>  "80:class_g     = 'Polybar'",<\n>  "100:class_g    = 'code-oss'",<\n>  "100:class_g    = 'Meld'",<\n>  "70:class_g     = 'TelegramDesktop'",<\n>  "90:class_g     = 'Joplin'",<\n>  "100:class_g    = 'firefox'",<\n>  "100:class_g    = 'Thunderbird'"<\n>];
+#################################
+#     Background-Blurring       #
+#################################
+# Parameters for background blurring, see the *BLUR* section for more information.
+# blur-method = 
+# blur-size = 12
+#
+# blur-deviation = false
+# Blur background of semi-transparent / ARGB windows. 
+# Bad in performance, with driver-dependent behavior. 
+# The name of the switch may change without prior notifications.
+#
+# blur-background = true;
+# Blur background of windows when the window frame is not opaque. 
+# Implies:
+#    blur-background 
+# Bad in performance, with driver-dependent behavior. The name may change.
+#
+# blur-background-frame = false;
+# Use fixed blur strength rather than adjusting according to window opacity.
+# blur-background-fixed = false;
+# Specify the blur convolution kernel, with the following format:
+# example:
+#   blur-kern = "5,5,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1";
+#
+# blur-kern = ''
+# blur-kern = "3x3box";
+blur: {<\n>  # requires: https://github.com/ibhagwan/picom<\n>  method = "kawase";<\n>  #method = "kernel";<\n>  strength = 7;<\n>  # deviation = 1.0;<\n>  # kernel = "11x11gaussian";<\n>  background = false;<\n>  background-frame = false;<\n>  background-fixed = false;<\n>  kern = "3x3box";<\n>}
+# Exclude conditions for background blur.
+blur-background-exclude = [<\n>  #"window_type = 'dock'",<\n>  #"window_type = 'desktop'",<\n>  #"class_g = 'URxvt'",<\n>  #<\n>  # prevents picom from blurring the background<\n>  # when taking selection screenshot with `main`<\n>  # https://github.com/naelstrof/maim/issues/130<\n>  "class_g = 'slop'",<\n>  "_GTK_FRAME_EXTENTS@:c"<\n>];
+#################################
+#       General Settings        #
+#################################
+# Daemonize process. Fork to background after initialization. Causes issues with certain (badly-written) drivers.
+# daemon = false
+# Specify the backend to use: `xrender`, `glx`, or `xr_glx_hybrid`.
+# `xrender` is the default one.
+#
+experimental-backends = true;
+backend = "glx";
+#backend = "xrender";
+# Enable/disable VSync.
+# vsync = false
+vsync = true
+# Enable remote control via D-Bus. See the *D-BUS API* section below for more details.
+# dbus = false
+# Try to detect WM windows (a non-override-redirect window with no 
+# child that has 'WM_STATE') and mark them as active.
+#
+# mark-wmwin-focused = false
+mark-wmwin-focused = true;
+# Mark override-redirect windows that doesn't have a child window with 'WM_STATE' focused.
+# mark-ovredir-focused = false
+mark-ovredir-focused = true;
+# Try to detect windows with rounded corners and don't consider them 
+# shaped windows. The accuracy is not very high, unfortunately.
+#
+# detect-rounded-corners = false
+detect-rounded-corners = true;
+# Detect '_NET_WM_OPACITY' on client windows, useful for window managers
+# not passing '_NET_WM_OPACITY' of client windows to frame windows.
+#
+# detect-client-opacity = false
+detect-client-opacity = true;
+# Specify refresh rate of the screen. If not specified or 0, picom will 
+# try detecting this with X RandR extension.
+#
+# refresh-rate = 60
+refresh-rate = 0
+# Limit picom to repaint at most once every 1 / 'refresh_rate' second to 
+# boost performance. This should not be used with 
+#   vsync drm/opengl/opengl-oml
+# as they essentially does sw-opti's job already, 
+# unless you wish to specify a lower refresh rate than the actual value.
+#
+# sw-opti = 
+# Use EWMH '_NET_ACTIVE_WINDOW' to determine currently focused window, 
+# rather than listening to 'FocusIn'/'FocusOut' event. Might have more accuracy, 
+# provided that the WM supports it.
+#
+# use-ewmh-active-win = false
+# Unredirect all windows if a full-screen opaque window is detected, 
+# to maximize performance for full-screen windows. Known to cause flickering 
+# when redirecting/unredirecting windows. paint-on-overlay may make the flickering less obvious.
+#
+# unredir-if-possible = false
+# Delay before unredirecting the window, in milliseconds. Defaults to 0.
+# unredir-if-possible-delay = 0
+# Conditions of windows that shouldn't be considered full-screen for unredirecting screen.
+# unredir-if-possible-exclude = []
+# Use 'WM_TRANSIENT_FOR' to group windows, and consider windows 
+# in the same group focused at the same time.
+#
+# detect-transient = false
+detect-transient = true
+# Use 'WM_CLIENT_LEADER' to group windows, and consider windows in the same 
+# group focused at the same time. 'WM_TRANSIENT_FOR' has higher priority if 
+# detect-transient is enabled, too.
+#
+# detect-client-leader = false
+detect-client-leader = true
+# Resize damaged region by a specific number of pixels. 
+# A positive value enlarges it while a negative one shrinks it. 
+# If the value is positive, those additional pixels will not be actually painted 
+# to screen, only used in blur calculation, and such. (Due to technical limitations, 
+# with use-damage, those pixels will still be incorrectly painted to screen.) 
+# Primarily used to fix the line corruption issues of blur, 
+# in which case you should use the blur radius value here 
+# (e.g. with a 3x3 kernel, you should use `--resize-damage 1`, 
+# with a 5x5 one you use `--resize-damage 2`, and so on). 
+# May or may not work with *--glx-no-stencil*. Shrinking doesn't function correctly.
+#
+# resize-damage = 1
+# Specify a list of conditions of windows that should be painted with inverted color. 
+# Resource-hogging, and is not well tested.
+#
+# invert-color-include = []
+# GLX backend: Avoid using stencil buffer, useful if you don't have a stencil buffer. 
+# Might cause incorrect opacity when rendering transparent content (but never 
+# practically happened) and may not work with blur-background. 
+# My tests show a 15% performance boost. Recommended.
+#
+# glx-no-stencil = false
+# GLX backend: Avoid rebinding pixmap on window damage. 
+# Probably could improve performance on rapid window content changes, 
+# but is known to break things on some drivers (LLVMpipe, xf86-video-intel, etc.).
+# Recommended if it works.
+#
+# glx-no-rebind-pixmap = false
+# Disable the use of damage information. 
+# This cause the whole screen to be redrawn everytime, instead of the part of the screen
+# has actually changed. Potentially degrades the performance, but might fix some artifacts.
+# The opposing option is use-damage
+#
+# no-use-damage = false
+#use-damage = true (Causing Weird Black semi opaque rectangles when terminal is opened)
+#Changing use-damage to false fixes the problem
+use-damage = false
+# Use X Sync fence to sync clients' draw calls, to make sure all draw 
+# calls are finished before picom starts drawing. Needed on nvidia-drivers 
+# with GLX backend for some users.
+#
+# xrender-sync-fence = false
+# GLX backend: Use specified GLSL fragment shader for rendering window contents. 
+# See `compton-default-fshader-win.glsl` and `compton-fake-transparency-fshader-win.glsl` 
+# in the source tree for examples.
+#
+# glx-fshader-win = ''
+# Force all windows to be painted with blending. Useful if you 
+# have a glx-fshader-win that could turn opaque pixels transparent.
+#
+# force-win-blend = false
+# Do not use EWMH to detect fullscreen windows. 
+# Reverts to checking if a window is fullscreen based only on its size and coordinates.
+#
+# no-ewmh-fullscreen = false
+# Dimming bright windows so their brightness doesn't exceed this set value. 
+# Brightness of a window is estimated by averaging all pixels in the window, 
+# so this could comes with a performance hit. 
+# Setting this to 1.0 disables this behaviour. Requires --use-damage to be disabled. (default: 1.0)
+#
+# max-brightness = 1.0
+# Make transparent windows clip other windows like non-transparent windows do,
+# instead of blending on top of them.
+#
+# transparent-clipping = false
+# Set the log level. Possible values are:
+#  "trace", "debug", "info", "warn", "error"
+# in increasing level of importance. Case doesn't matter. 
+# If using the "TRACE" log level, it's better to log into a file 
+# using *--log-file*, since it can generate a huge stream of logs.
+#
+# log-level = "debug"
+log-level = "info";
+# Set the log file.
+# If *--log-file* is never specified, logs will be written to stderr. 
+# Otherwise, logs will to written to the given file, though some of the early 
+# logs might still be written to the stderr. 
+# When setting this option from the config file, it is recommended to use an absolute path.
+#
+# log-file = '/path/to/your/log/file'
+# Show all X errors (for debugging)
+# show-all-xerrors = false
+# Write process ID to a file.
+# write-pid-path = '/path/to/your/log/file'
+# Window type settings
+# 
+# 'WINDOW_TYPE' is one of the 15 window types defined in EWMH standard: 
+#     "unknown", "desktop", "dock", "toolbar", "menu", "utility", 
+#     "splash", "dialog", "normal", "dropdown_menu", "popup_menu", 
+#     "tooltip", "notification", "combo", and "dnd".
+# 
+# Following per window-type options are available: ::
+# 
+#   fade, shadow:::
+#     Controls window-type-specific shadow and fade settings.
+# 
+#   opacity:::
+#     Controls default opacity of the window type.
+# 
+#   focus:::
+#     Controls whether the window of this type is to be always considered focused. 
+#     (By default, all window types except "normal" and "dialog" has this on.)
+# 
+#   full-shadow:::
+#     Controls whether shadow is drawn under the parts of the window that you 
+#     normally won't be able to see. Useful when the window has parts of it 
+#     transparent, and you want shadows in those areas.
+# 
+#   redir-ignore:::
+#     Controls whether this type of windows should cause screen to become 
+#     redirected again after been unredirected. If you have unredir-if-possible
+#     set, and doesn't want certain window to cause unnecessary screen redirection, 
+#     you can set this to `true`.
+#
+wintypes:
+{<\n>  normal = { fade = false; shadow = false; }<\n>  tooltip = { fade = true; shadow = true; opacity = 0.75; focus = true; full-shadow = false; };<\n>  dock = { shadow = false; }<\n>  dnd = { shadow = false; }<\n>  popup_menu = { opacity = 0.8; }<\n>  dropdown_menu = { opacity = 0.8; }<\n>};
+z nush
+z .config/nushell/
+ls
+helix config.nu
+cat config.nu | clipboard 
+helix config.nu
+cat config.nu | clipboard 
+helix config.nu
+cat config.nu | clipboard 
+helix config.nu
+cat config.nu | clipboard 
+helix .
+nu8
+cat config.nu | clipboard 
+cd ..
+cdi
+zoxide
+cd nushell/
+ls
+helix zoxide.nu
+cdi
+__zoxide_zi 
+__zoxide_zi -v
+helix zoxide.nu
+zoxide
+eval "$(/usr/bin/zoxide init bash)"
+ "$(/usr/bin/zoxide init bash)"
+exec "$(/usr/bin/zoxide init bash)"
+zoxide add ~
+cdi
+zoxide init nushell --hook prompt
+zoxide query
+zoxide
+zoxide lol
+zoxide lol query ho
+zoxide query ho
+cd
+cd nushell/
+cd .config/
+cd
+cd .config/picom/
+ls
+helix zoxide.nu
+locate picom.conf
+cat /etc/xdg/picom.conf.example | clipboard
+helix picom.conf
+nu
+nu
+nu
+nu
+btop
+picom --config .config/picom/picom.conf
+cd .config/i3/
+helix config
+i3-msg reload
+i3-msg restart
+xprop
+bar
+cd ..
+cd alacritty/
+sudo pacman -S krita
+helix config
+cd ..
+cd picom/
+helix config
+helix picom.conf
+helix alacritty.yml
+yay -S gdlauncher
+i3-msg restart
+cd ~/Pictures/Wallpapers/
+feh --bg-fill 343985-sepik.jpg
+ls
+ranger
+feh --bg-fill vladimir-lenin-communism-hd-wallpaper-thumb1.jpg
+cd .config/nushell/
+ls
+cd .config/nushell/
+dci
+cdi
+helix .
+hx
+cd ..
+cd picom/
+helix .
+cd ..
+cd i3
+helix config
+i3-msg restart
+sudo yay -S gdlauncher
+bat TODO.md
+hx TODO.md
+bat TODO.md
+markdown TODO.md
+bat TODO.md
+cdi i3
+cd .config/i3
+code .
+cdi
+$env
+cd .config/nushell/
+hx env.nu
+cd .config/nushell/
+hx env.nu
+cd .config/nushell/
+hx env.nu
+yay -S gdlauncher
+lks
+ls
+cd Downloads/
+ls
+shutdown now
+cd .config/i3/
+ls
+hx config
+i3-msg restart
+hx config
+cd ,,
+cd ..
+cd helix/
+ls
+helix --help
+helix --health
+sudo pacmna -S rustup
+sudo pacman -S rustup
+rustup
+sudo pacmna -S rustup
+sudo pacman -S rustup
+rustup upgrade stable
+ls
+helix --health
+sudo pamac -S yaml-language-server
+sudo pamac install yaml-language-server
+sudo pamac install taplo
+hx --heatlh
+hx --health
+rustup
+rustup component add rust-analyzer
+hx --health
+rustup component add rust-src
+hx --health
+sudo pamac install rust-analyzer
+hx --health
+sudo pamac install lldb-vscode
+yay -S lldb-vscode
+sudo pamac install marksman
+yay -Ss marksman
+yay -Ss marksman-bin
+sudo pamac install marksman-bin
+cd ~
+hx TODO.md
+cd Downloads/
+ls
+cargo init
+ls
+rm Cargo.toml
+cargo new Test
+cd Test/
+cargo add bevy
+cd Downloads/Test/
+cargo add bevy
+hx .
+ls
+hx 
+cargo r
+sudo pamac install bacon
+bacon
+bacon --help
+bacon -w
+cd ..
+rm -r Test/
+ls
+rm -r src/
+rsync
+rsync --progress /home/maa/Downloads/Sozialistische Deutsche Arbeiterjugend (SDAJ-GOE)/ SDAJ
+rsync --progress "/home/maa/Downloads/Sozialistische Deutsche Arbeiterjugend (SDAJ-GOE)/" SDAJ
+sudo rsync --progress "/home/maa/Downloads/Sozialistische Deutsche Arbeiterjugend (SDAJ-GOE)/" SDAJ
+ls
+sudo rsync --progress "/home/maa/Downloads/Sozialistische Deutsche Arbeiterjugend (SDAJ-GOE)/" `Sozialistische Deutsche Arbeiterjugend (SDAJ-GOE)/`
+sudo rsync --progress `/home/maa/Downloads/Sozialistische Deutsche Arbeiterjugend (SDAJ-GOE)/` `Sozialistische Deutsche Arbeiterjugend (SDAJ-GOE)/`
+rm -r `Sozialistische Deutsche Arbeiterjugend (SDAJ-GOE)/`
+sudo rsync --progress `/home/maa/Downloads/Sozialistische Deutsche Arbeiterjugend (SDAJ-GOE)/` `Sozialistische Deutsche Arbeiterjugend (SDAJ-GOE)/`+
+sudo rsync --progress `/home/maa/Downloads/Sozialistische Deutsche Arbeiterjugend (SDAJ-GOE)/` `Sozialistische Deutsche Arbeiterjugend (SDAJ-GOE)/`
+sudo cp `/home/maa/Downloads/Sozialistische Deutsche Arbeiterjugend (SDAJ-GOE)/` `Sozialistische Deutsche Arbeiterjugend (SDAJ-GOE)/`
+sudo cp -r `/home/maa/Downloads/Sozialistische Deutsche Arbeiterjugend (SDAJ-GOE)/` `Sozialistische Deutsche Arbeiterjugend (SDAJ-GOE)/`
+ls
+cd `Sozialistische Deutsche Arbeiterjugend (SDAJ-GOE)/`
+mv `Sozialistische Deutsche Arbeiterjugend (SDAJ-GOE)/` `Sozialistische Deutsche Arbeiterjugend (SDAJ-GOE)1/`
+sudo mv `Sozialistische Deutsche Arbeiterjugend (SDAJ-GOE)/` `Sozialistische Deutsche Arbeiterjugend (SDAJ-GOE)1/`
+cd ..
+mv `Sozialistische Deutsche Arbeiterjugend (SDAJ-GOE)/Sozialistische Deutsche Arbeiterjugend (SDAJ-GOE)1/` .
+sudo mv `Sozialistische Deutsche Arbeiterjugend (SDAJ-GOE)/Sozialistische Deutsche Arbeiterjugend (SDAJ-GOE)1/` .
+cd `Sozialistische Deutsche Arbeiterjugend (SDAJ-GOE)1/`
+ls
+cd ..
+mv `Sozialistische Deutsche Arbeiterjugend (SDAJ-GOE)/` `Sozialistische Deutsche Arbeiterjugend (SDAJ-GOE)1/`
+sudo mv `Sozialistische Deutsche Arbeiterjugend (SDAJ-GOE)/` `Sozialistische Deutsche Arbeiterjugend (SDAJ-GOE)1/`
+sudo mv -r `Sozialistische Deutsche Arbeiterjugend (SDAJ-GOE)/` `Sozialistische Deutsche Arbeiterjugend (SDAJ-GOE)1/`
+rm -r `Sozialistische Deutsche Arbeiterjugend (SDAJ-GOE)/`
+sudo rm -r `Sozialistische Deutsche Arbeiterjugend (SDAJ-GOE)/`
+ls
+sudo rm -r `Sozialistische Deutsche Arbeiterjugend (SDAJ-GOE)1/`
+sudo rsync --progress -rf `/home/maa/Downloads/Sozialistische Deutsche Arbeiterjugend (SDAJ-GOE)/` .
+ls
+rsync --help
+sudo rsync --progress -r --force --stats `/home/maa/Downloads/Sozialistische Deutsche Arbeiterjugend (SDAJ-GOE)/` .
+chmod 
+chmod -rwx `Preisstopp Jetzt/`
+sudo chmod -rwx `Preisstopp Jetzt/`
+sudo chmod 777 `Preisstopp Jetzt/`
+sudo chmod 777 *
+cd Downloads/
+sudo chmod 777 *
+cd ..
+cd .config/helix/
+dolphin .
+hx config.toml
+cd ~/.config/alacritty/
+ls
+hx config.toml
+mkdir themes
+cd themes/
+bat alacritty.yml
+hx chris-biscardi.toml
+cd ..
+hc
+hx
+cd themes/
+cat alacritty.yml
+cd .config/
+ld
+ls
+cd i3/
+hx
+hx ../helix/config.toml
+i3-msg restart
+hx config
+i3-msg restart
+sudo pamac install gdlauncher
+LS
+shutdown now
+cd i3/
+cd .config/i3/
+hx config
+ls
+cd ..
+locate background
+locate terminal_hold
+cd dmenu-recent/
+ls
+bat background
+hx 
+hx .
+xdg-settings set default-web-browser firefox
+$env
+hx $env.nu
+cd ..
+cd nushell/
+EDITOR
+config nu
+hx env.nu
+$env
+neofetch
+sudo pacman -S neofetch
+neofetch
+😅
+bat /etc/environment
+$env
+sudo hx /etc/environment
+sudo helix /etc/environment
+cd Downloads/
+git clone https://aur.archlinux.org/electron16.git
+cd electron16/
+ls
+make -is
+makepkg PKGBUILD
+cd ..
+ls
+rm -r electron16/
+ark
+sudo pacman -S ark
+ark
+locate gdlauncher
+btop
+sudo pamac install kdelive
+sudo pamac install appimagelauncher
+sudo pamac install obsidian
+cd Documents/
+git clone https://github.com/MAA28/Abi.git
+shutdown now
+cd /run/media/maa/7b2feaeb-8138-49c0-b582-b8f06298515f/maa28/ ~/Downloads/
+sudo cp -r /run/media/maa/7b2feaeb-8138-49c0-b582-b8f06298515f/maa28/ ~/Downloads/
+sudo rsync --progress -r /run/media/maa/7b2feaeb-8138-49c0-b582-b8f06298515f/maa28/ ~/Downloads/
+sudo rsync --progress -r /run/media/maa/7b2feaeb-8138-49c0-b582-b8f06298515f/maa28/Dokumente/ ~/Downloads/
+chown pc *
+cd Downloads/
+ls
+ls -al
+sudo chmod 777 Passwörter.kdbx
+ls -al
+hx .config/gtk-3.0/settings.ini
+sudo pacman -S okular
+hx --health
+sudo pacman -S texlab
+cd Documents/Abi/
+cd Seminarfach/Expose/
+hx main.tex
+hx --health
+sudo pacman -S code
+sudo pacman -S latex
+sudo pamac install latex
+i3-msg restart
+sudo pacman -S thunderbird
+locate krita
+gdlauncher
+sudo pacman -S disks
+sudo fdisk -l
+sudo wipefs --all /dev/sdb
+sudo fdisk -l
+sudo cfdisk /dev/sdb
+sudo mkfs.vfat -n "USB" /dev/sdb1
+cd /home/maa/Applications/GDLauncher-linux-setup_362c2a63c3aa5381e2aa0b885d47631f.AppImage
+cd /home/maa/Applications
+appimagelauncherd 
+cd /home/maa/Applications
+dolphin 
+cd .config/dmenu-recent/
+ls
+rg terminal
+rg gdlauncher
+cd /usr/bin/
+ls
+rg gdlauncher
+sudo rg gdlauncher
+su
+sudo 
+ls | rg gdlauncher
+ls
+hx gdlauncher
+sudo hx gdlauncher
+sudo helix gdlauncher
+gdlauncher
+sudo gdlauncher
+ls -al | rg gd
+ls -l | rg gd
+chmod +x gdlauncher
+sudo chmod +x gdlauncher
+cd /usr/bin/
+sudo helix shutdown
+sudo helix ´shutdown now´
+sudo helix "shutdown\ now"
+sudo helix "shutdown now"
+cd Downloads/
+bat *.java
+shutdown now
+ls
+cd Applications/
+ls
+./balenaEtcher-1.7.9-ia32_1051c521ae24578109f9c5621b781b7e.AppImage
+sudo pacman -S fuse
+./balenaEtcher-1.7.9-ia32_1051c521ae24578109f9c5621b781b7e.AppImage
+sudo pamac remove fuse
+sudo pamac remove libfuse.so.2
+./balenaEtcher-1.7.9-ia32_1051c521ae24578109f9c5621b781b7e.AppImage --appimage-extract
+./balenaEtcher-1.7.9-ia32_1051c521ae24578109f9c5621b781b7e.AppImage --no-sandbox
+sudo chmod u+s `which fusermount`
+ls -al
+chmod +x balenaEtcher-1.7.9-ia32_1051c521ae24578109f9c5621b781b7e.AppImage
+./balenaEtcher-1.7.9-ia32_1051c521ae24578109f9c5621b781b7e.AppImage --no-sandbox
+sudo pamac install libfuse2
+sudo pamac install rufus
+sudo pamac install USBwriter
+sudo pamac install usbimager
+shutdown now
+cd Downloads/
+ls
+wine
+sudo pacman -S wine
+terminal
+sudo pamac install keytouch keytouch-editor
+sudo pamac install keytouch
+pakku -S keytouch 
+sudo pamac install pakku
+pakku -S keytouch 
+pacman -S keytouch-editor
+sudo pacman -S keytouch-editor
+showkey --scancides
+showkey --scancodes
+showkey --s
+showkey -s
+sudo showkey -s
+xev | awk -F'[ )]+' '/^KeyPress/ { a[NR+2] } NR in a { printf "%-3s %s\n", $5, $8 }'
+sudo pamac install xev
+sudo showkey -s
+sudo pamac install xorg-xev
+xev | awk -F'[ )]+' '/^KeyPress/ { a[NR+2] } NR in a { printf "%-3s %s\n", $5, $8 }'
+sudo pamac remove xorg-xev
+xbindkeys
+sudo pamac xbindkeys
+sudo pamac install xbindkeys
+xbindkeys 
+xbindkeys_show 
+sudo xbindkeys_show 
+showkey
+showkey -h
+showkey -k
+sudo showkey -k
+sudo showkey -a
+hx .xbindkeysrc
+sudo showkey -k
+xbindkeys
+sudo showkey -k
+hx .xbindkeysrc
+xbindkeys
+sudo showkey -s
+sudo showkey -k
+sudo showkey -a
+sudo showkey -h
+xbindkeys_show 
+sudo pamac install wish
+xbindkeys_show 
+wish
+sudo pamac install tcl
+xbindkeys_show 
+pamac --help
+pamac install --help
+sudo pamac install tk
+xbindkeys_show 
+xbindkeys_show --multikey
+xbindkeys_config
+sudo pamac install xbindkeys_config
+sudo pamac install xbindkeys_config-gtk2
+xbindkeys_config
+sudo pamac install xvkdb
+sudo pamac install xvkbd
+xbindkeys_config
+ls
+ls -a
+ranger
+ranger help
+ranger --help
+man ranger 
+mv .minecraft/ .config/
+mv .config/.minecraft/ .config/minecraft
+mv .config/minecraft/ .minecraft
+ranger
+xdotool 
+sleep  4 && xdotool click 0
+sleep  4; xdotool click 0
+sleep 2; xdotool click 0
+sleep 2s; xdotool click 0
+sleep 2sec; xdotool click 0
+xdotool click
+xbindkeys_config
+cd .config/i3/
+workspace
+i3-msg workspace 2
+shutdown now
+mkdir .fonts
+ls
+mv Downloads/Raleway.zip .fonts/
+mv Downloads/Amatic_SC.zip .fonts/
+ranger
+cd .fonts
+unzip *
+sudo pamac install unzip
+unzip *
+ls
+dolphin .
+fc.list
+fc-list
+fc-cache -fv
+cd ..
+ls
+locate krita
+cd ..
+cd usr
+cd ..
+cd home
+cd maa
+xbindkeys
+shutdown now
+i3-save-tree --workspace 1 > ~/.i3/workspace-1.json
+sudo pamac install perl-anyevent-i3
+i3-save-tree --workspace 1 >> ~/.i3/workspace-1.json
+cd .config/i3/
+ls
+i3-save-tree --workspace 1 > ~/.i3/workspace-1.json
+mkdir workspaces
+cd workspaces/
+hx workspace-1.json
+hx --healt
+hx --health
+sudo pamac install vscode-json-languageserver
+hx workspace-1.json
+i3-msg "workspace 1; append_layout workspace-1.json"
+ls
+i3-msg "workspace 1; append_layout workspace-1.json"
+sudo pamac install i3-layout-manager
+i3-append workspace-1.json
+sudo pamac isntall i3-append
+sudo pamac install i3-append
+sudo pamac install i3-layout-manager-git
+i3-append workspace-1.json
+cd ..
+ls
+locate hi
+locate asdfghjk
+xbindkeys
+cd .config/i3/
+hx config
+xdotool click
+xdotool click 0
+xdotool click 1
+shutdown now
+sudo pamac install kdenlive
+sudo pamac remove kdenlive
+cd Documents/
+sudo pamac install kdenlive
+mkdir Streiks
+cd Streiks/
+cd ~
+hx .Xresources
+xrandr --dpi 220
+xrandr 
+xrandr --dpi 300
+shutdown now
+ls
+cd .config
+ls
+git init
+git remote add origin https://github.com/MAA28/dotfiles.git
+git config --global init.defaultBranch main
+git branch -m main
+ls
+git add i3
+git add helix
+git add alacritty/
+git status
+bat picom.conf
+ls picom/
+bat picom/picom.conf
+rm picom.conf
+git add picom/
+git add nushell
+git add ranger
+dust
+sudo pamac install dust
+git status
+dust
+ls
+git add i3-layout-manager/
+git commit -a -m"first commit: adding some stuff"
+git commit -a -m "first commit: adding some stuff"
+  git config --global user.email "you@example.com"
+  git config --global user.email "malteaschenbach@gmail.com"
+git config --global user.name "maa-b450mhdvr40"
